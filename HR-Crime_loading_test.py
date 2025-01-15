@@ -54,6 +54,9 @@ def main():
     # Filter normal videos
     train_videos = [video for video in train_videos if 'Normal' in video]
 
+    train_videos = train_videos[:10]
+    test_videos = test_videos[:10]
+
     print(f"Total videos: {len(all_videos)}")
     print(f"Training videos: {len(train_videos)}")
     print(f"Testing videos: {len(test_videos)}")
